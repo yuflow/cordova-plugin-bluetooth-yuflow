@@ -16,7 +16,7 @@
     "bluetooth",
     "cordova",
     "ecosystem:cordova",
-    "cordova-android",
+    "cordova-android"
   ],
   "author": "Julien Fischer",
   "license": "MIT",
