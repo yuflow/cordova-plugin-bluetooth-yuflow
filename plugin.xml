@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-bluetooth-yuflow" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>BluetoothYuflow</name>
+
+    <description>Bluetooth plugin to connect to multiple devices</description>
+    <license>MIT</license>
+    <keywords>cordova,bluetooth</keywords>
+
+    <js-module name="BluetoothYuflow" src="www/BluetoothYuflow.js">
+        <clobbers target="window.bluetoothyuflow" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="BluetoothYuflow">
+                <param name="android-package" value="com.yuflow.cordova.BluetoothYuflow" />
+            </feature>
+        </config-file>
+
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+        </config-file>
+
+        <source-file src="src/android/BluetoothYuflow.java" target-dir="src/com.yuflow.cordova/" />
+        <source-file src="src/android/BluetoothConfig.java" target-dir="src/com.yuflow.cordova/" />
+        <source-file src="src/android/AcceptConnectionThread.java" target-dir="src/com.yuflow.cordova/" />
+        <source-file src="src/android/ConnectionThread.java" target-dir="src/com.yuflow.cordova/" />
+        <source-file src="src/android/ConnectedThread.java" target-dir="src/com.yuflow.cordova/" />
+        <source-file src="src/android/BluetoothCallbacks.java" target-dir="src/com.yuflow.cordova/" />
+    </platform>
+</plugin>

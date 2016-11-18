@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-bluetooth-yuflow",
+  "version": "0.0.1",
+  "description": "Bluetooth plugin to connect to multiple devices",
+  "cordova": {
+    "id": "cordova-plugin-bluetooth-yuflow",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuflow/cordova-plugin-bluetooth-yuflow"
+  },
+  "keywords": [
+    "bluetooth",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+  ],
+  "author": "Julien Fischer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuflow/cordova-plugin-bluetooth-yuflow/issues"
+  },
+  "homepage": "https://github.com/yuflow/cordova-plugin-bluetooth-yuflow#readme"
+}
